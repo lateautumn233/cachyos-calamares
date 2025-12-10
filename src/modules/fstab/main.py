@@ -56,6 +56,7 @@ FS_MAP = {
     "fat16": "vfat",
     "fat32": "vfat",
     "linuxswap": "swap",
+    "ntfs": "ntfsplus",
 }
 
 
