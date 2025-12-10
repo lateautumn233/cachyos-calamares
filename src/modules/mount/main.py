@@ -261,6 +261,9 @@ def mount_partition(root_mount_point, partition, partitions, mount_options, moun
     if fstype == "fat16" or fstype == "fat32":
         fstype = "vfat"
 
+    if fstype == "ntfs":
+        fstype = "ntfsplus"
+
     device = partition["device"]
 
     if "luksMapperName" in partition:
